@@ -18,7 +18,7 @@ spec:
       - name: my-registry-key
       containers:
       - name: nodeapp
-        image: nanajanashia/demo-app:nodeapp
+        image: mikomaksm/demo-app:nodeapp
         ports:
         - containerPort: 3000
         imagePullPolicy: Always  
@@ -52,6 +52,7 @@ spec:
     port: service
     targetPort: 3000
   namespaceSelector:
+    # any: true
     matchNames:
     - default
   selector:
